@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>flex</title>
+	<style type="text/css">
+		body{
+			margin: 0px;
+			background-image: url("http://4.bp.blogspot.com/-cQ4XnoW4Ysc/Tzbg3Jh25VI/AAAAAAAAA74/xFjSDny2SqU/s1600/21.Jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		    font-family: Arial, Helvetica, sans-serif;
+		}
+		.navbar{
+			background-color: #0E185F;
+			height: 2em;
+			color: white;
+			word-spacing: 45px;
+			letter-spacing: 1px;
+			font-size: 20px;
+			padding-top: 22px;
+		}
+        .navbarstyle{
+            margin-left: 45px;
+        }
+		.navbarstyle a{
+			text-decoration: none;
+			color:white;
+		}
+		.acolor,.op{
+			background-color: darkred;
+		}
+		select{
+		background-color:#001E6C;
+		color: white;
+		text-decoration: none;
+		font-size: 20px;
+	   }
+		.container{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			margin-top: 20px;
+			margin-bottom: 20px
+            }
+		.one,.two,.three{
+	    background-color:#0E185F;
+	    border: 1px solid white;
+	    opacity: 60%;
+	    border-radius: 6px;
+	    width: 25%;
+	    padding-top: 30px;
+	    padding-bottom:30px;
+	    padding-right: 15px;
+	    padding-left:15px;
+	    color: white;
+	    }
+	    footer{
+		background-color:#001E6C;
+	    }
+	    .footerstyle{
+		color:white;
+		padding-top: 35px;
+	    height: 7em;
+	    text-align: center;
+	}
+	.footerstyle a{
+	       color: white;
+	       
+	      }
+	    @media screen and (max-width:811px)
+	    {
+		.container{
+			flex-direction: column;
+		}
+		.one,.two,.three
+		{
+			width: 80%;
+			margin-bottom: 20px;
+			margin-left:21px;
+		}
+		.navbar{
+			flex-direction: row;
+			word-spacing: 5px;
+			letter-spacing:0px;
+			font-size: 15px;
+			margin-left:3px;
+		}
+        option,select{
+            font-size: 15px;
+        }
+
+
+	
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<div class="navbarstyle">
+			<a  class="acolor" href="#">Home</a>
+			<a href="#">Gallery</a>
+			<select class="select">
+				<option class="op">AboutUs</option>
+				<option class="op">Mission</option>
+				<option class="op">Vision</option>
+			</select>
+			<a href="#">ContactUs</a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="one">
+			<h2><u><center>HTML</center></u></h2>
+			<p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+		</div>
+		<div class="two">
+			<h2><u><center>JavaScript</center></u></h2>
+			<p>JavaScript often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.Over 97% of websites use JavaScript on the client side for web page behavior,often incorporating third-party libraries.[13] All major web browsers have a dedicated JavaScript engine to execute the code on users' devices </p>
+		</div>
+		<div class="three">
+			<h2><u><center>CSS</center></u></h2>
+			<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.</p>
+		</div>
+	</div>
+	<footer>
+		<div class="footerstyle">
+			<a href="">Back to top</a>
+			<p>©2017-2019 Company,Inc-<a href="#">Privacy</a> and <a href="#">Terms</a>
+		</div>
+    </footer>
+</body>
+</html>
